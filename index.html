@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Virtual Exploration in Kazakhstan</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Tailwind CSS-->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-blue-100 text-gray-900">
+        <!-- Navbar -->
+        <nav class="bg-teal-500 text-white py-4">
+            <div class="container mx-auto flex justify-between itemhys-center">
+                <a href="#" class="text-2xl font-bold">Kazakhstan Virtual Tour</a>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-red-500">About</a></li>
+                    <li><a href="#famous-delicacies" class="hover:text-red-500">Delicacies</a></li>
+                    <li><a href="#top-places" class="hover:text-red-500">Top Places</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="relative h-screen bg-cover bg-center" style="background-image: url('https://www.journalofnomads.com/wp-content/uploads/2018/07/Lake-Kaindy-Kazakhstan-place-to-visit.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="container mx-auto h-full flex flex-col items-center justify-center text-white relative z-10">
+                <h2 class="text-4xl font-semibold mb-4">Very Nice!</h2>
+                <h1 class="text-6xl font-bold uppercase">Kazakhstan</h1>
+            </div>
+        </header>
+        <!-- About Kazakhstan -->
+        <section id="about" class="py-16 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h5 class="text-lg uppercase tracking-widest text-gray-400">About Kazakhstan</h5>
+                <h3 class="text-3xl font-semibold mt-2">Explore the Heart of Eurasia</h3>
+                <p class="text-gray-600 mt-4 max-w-3xl mx-auto">
+                    Kazakhstan is a vast country with diverse landscapes ranging from mountains to deserts. As the ninth largest country in the world, it is a melting pot of cultures, rich history, and breathtaking natural beauty. Known for its nomadic traditions, Kazakhstan offers a unique blend of modernity and heritage that captivates every traveler.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <!-- Geography -->
+                    <div class="bg-gray-900 shadow-md rounded-lg overflow-hidden cursor-pointer text-center" onclick="toggleDescription(this)">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="text-2xl font-medium text-gray-800"></i> Geography
+                            </h3>
+                            <p class="hidden text-gray-300 mt-2">
+                                Kazakhstan is known for its diverse geography, featuring snow-capped mountains, vast steppes, and serene lakes. The Caspian Sea and Altai Mountains add to its natural splendor, making it a haven for nature enthusiasts and adventurers alike.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Languages Spoken -->
+                    <div class="bg-gray-900 shadow-md rounded-lg overflow-hidden cursor-pointer text-center" onclick="toggleDescription(this)">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="text-2xl font-medium text-gray-800"></i> Languages Spoken
+                            </h3>
+                            <p class="hidden text-gray-300 mt-2">
+                                Kazakhstan has two official languages: Kazakh, the national language deeply rooted in the country's culture, and Russian, widely spoken for communication and business purposes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Leisure Activities -->
+                    <div class="bg-gray-900 shadow-md rounded-lg overflow-hidden cursor-pointer text-center" onclick="toggleDescription(this)">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="text-2xl font-medium text-gray-800"></i> Leisure Activities
+                            </h3>
+                            <p class="hidden text-gray-300 mt-2">
+                                From trekking in the Tian Shan Mountains to exploring the breathtaking Charyn Canyon, Kazakhstan offers countless outdoor adventures. Visitors can enjoy water sports on the Caspian Sea, explore ancient Silk Road routes, or dive into Almaty's bustling cultural scene.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Highlights Section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <div class="bg-gray-900 shadow-md rounded-lg text-center">
+                        <img src="https://media.assettype.com/outlooktraveller%2F2024-02%2Feade1225-df37-4b70-8295-0f700fb1d6c4%2Fshutterstock_250402336.jpg?w=768&auto=format%2Ccompress&fit=max" alt="Mountains" class="rounded-lg w-full h-48 object-cover" />
+                        <h4 class="text-xl font-medium mt-4 text-white">Stunning Landscapes</h4>
+                    </div>
+                    <div class="bg-gray-900 shadow-md rounded-lg text-center">
+                        <img src="https://www.orexca.com/img/kazakhstan/grandma1.jpg" alt="Culture" class="rounded-lg w-full h-48 object-cover" />
+                        <h4 class="text-xl font-medium mt-4 text-white">Rich Culture</h4>
+                    </div>
+                    <div class="bg-gray-900 shadow-md rounded-lg text-center">
+                        <img src="https://images.adsttc.com/media/images/5d26/18e6/284d/d143/6c00/027a/newsletter/BIGROUPTOWERS_01_G%C3%87%C3%B6_01.jpg?1562777811" alt="Architecture" class="rounded-lg w-full h-48 object-cover" />
+                        <h4 class="text-xl font-medium mt-4 text-white">Modern Marvels</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Famous Delicacies Section -->
+        <section id="famous-delicacies" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-gray-800">Famous Delicacies of Kazakhstan</h2>
+                <p class="text-lg text-gray-600 text-center mt-4 max-w-2xl mx-auto">
+                    Experience the unique flavors of Kazakhstan with these traditional dishes that reflect the nation's rich culture and culinary heritage.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+                    <!-- Card 1 -->
+                    <div class="bg-gray-900 shadow-md rounded-lg overflow-hidden cursor-pointer text-center" onclick="toggleDescription(this)">
+                        <img src="https://blog.remitly.com/wp-content/uploads/2023/09/kazakhstan-beshbarmak-scaled.jpg" alt="Beshbarmak" class="w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="bi bi-egg-fried mx-2"></i> Beshbarmak
+                            </h3>
+                            <p class="hidden text-gray-300 mt-2">
+                                Known as the "five fingers" dish, Beshbarmak is a symbol of Kazakh hospitality. It consists of tender boiled meat, usually lamb or beef, served over thin, hand-rolled noodles. The dish is accompanied by a flavorful broth and often enjoyed communally with family and friends.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-gray-900 shadow-md rounded-lg overflow-hidden cursor-pointer text-center" onclick="toggleDescription(this)">
+                        <img src="https://t3.ftcdn.net/jpg/09/74/14/20/360_F_974142043_J5ppyN9OMRKhD2dEEjuMpBFxpNShFs3c.jpg" alt="Kuurdak" class="w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="bi bi-meat mx-2"></i> Kuurdak
+                            </h3>
+                            <p class="hidden text-gray-300 mt-2">
+                                A rustic and hearty dish, Kuurdak is made from pan-fried meat, onions, and potatoes. Often prepared with mutton or beef, it is one of the oldest traditional dishes in Kazakhstan and reflects the nomadic lifestyle of the Kazakh people.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-gray-900 shadow-md rounded-lg overflow-hidden cursor-pointer text-center" onclick="toggleDescription(this)">
+                        <img src="https://www.tasteatlas.com/Images/Dishes/e922ef5b24a94fb889666121669c24fd.jpg" alt="Baursaks" class="w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="bi bi-basket mx-2"></i> Baursaks
+                            </h3>
+                            <p class="hidden text-gray-300 mt-2">
+                                These golden, fluffy fried dough balls are a staple of Kazakh cuisine. Served with tea, honey, or jam, Baursaks are enjoyed as both a savory and sweet treat. They are often prepared for special celebrations and family gatherings.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-gray-900 shadow-md rounded-lg overflow-hidden cursor-pointer text-center" onclick="toggleDescription(this)">
+                        <img src="https://cdn.elebase.io/173fe953-8a63-4a8a-8ca3-1bacb56d78a5/d4e25d4f-621e-49f0-89c0-e5e2a27d1263-shutterstock_1919743091.jpg?q=75" alt="Shashlik" class="w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="bi bi-skewers mx-2"></i> Shashlik
+                            </h3>
+                            <p class="hidden text-gray-300 mt-2">
+                                Shashlik, or grilled skewered meat, is a beloved delicacy enjoyed across Central Asia. Marinated in a blend of spices and vinegar, the meat is grilled over open flames, giving it a smoky and aromatic flavor. Served with raw onions and bread, it is a must-have at outdoor feasts.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="bg-gray-900 shadow-md rounded-lg overflow-hidden cursor-pointer text-center" onclick="toggleDescription(this)">
+                        <img src="https://www.tasteatlas.com/images/dishes/9fd3161b13734f7fbadd71c80314bc57.jpg" alt="Kazy" class="w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="bi bi-drumstick mx-2"></i> Kazy
+                            </h3>
+                            <p class="hidden text-gray-300 mt-2">
+                                A delicacy reserved for special occasions, Kazy is a sausage made from horse meat and seasoned with salt, pepper, and garlic. It is often served as part of a traditional meat platter and is a favorite among Kazakhs for its rich flavor and cultural significance.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="bg-gray-900 shadow-md rounded-lg overflow-hidden cursor-pointer text-center" onclick="toggleDescription(this)">
+                        <img src="https://pbs.twimg.com/media/C2mCKhGWEAA2Vdj.jpg" alt="Kurt" class="w-full h-32 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-white">
+                                <i class="bi bi-cheese mx-2"></i> Kurt
+                            </h3>
+                            <p class="hidden text-gray-300 mt-2">
+                                Kurt is a traditional snack made from dried, salted cheese balls. With a tangy and salty taste, it is a popular travel food for Kazakh nomads. Packed with nutrients and long-lasting, Kurt is a symbol of the resourcefulness of Kazakh culinary traditions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function toggleDescription(card) {
+                    const description = card.querySelector('p');
+                    if (description) {
+                        description.classList.toggle('hidden');
+                    }
+                }
+            </script>
+        </section>
+
+        <!-- Top Places Section -->
+        <section id="top-places" class="py-16 bg-white">
+            <div class="container mx-auto text-center">
+                <h5 class="text-lg uppercase tracking-widest text-gray-400">Top Places</h5>
+                <h3 class="text-3xl font-semibold mt-2">Must-Visit Locations in Kazakhstan</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <!-- Card 1 -->
+                    <div class="bg-gray-900 shadow-lg rounded-lg p-6">
+                        <img src="https://www.gokitetours.com/wp-content/uploads/2025/01/Top-10-tourist-attractions-in-Almaty-Kazakhstan.webp" alt="Almaty" class="rounded-lg w-full h-48 object-cover" />
+                        <h4 class="text-xl font-medium mt-4 text-white">Almaty</h4>
+                        <p class="text-gray-300 mt-2">Almaty served as the capital of Kazakhstan until 1997 and is renowned for its role in the Silk Road trade, offering rich cultural and historical significance.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-gray-900 shadow-lg rounded-lg p-6">
+                        <img src="https://assets.bucketlistly.blog/sites/5adf778b6eabcc00190b75b1/content_entry5b155bed5711a8176e9f9783/649e9bf9d44ab30002812e56/files/astana-kazakhstan-travel-photo-20230629151010350-main-image.jpg" alt="Astana" class="rounded-lg w-full h-48 object-cover" />
+                        <h4 class="text-xl font-medium mt-4 text-white">Astana</h4>
+                        <p class="text-gray-300 mt-2">Astana, now Nur-Sultan, was established as the capital in 1997 and is known for its modern architecture reflecting Kazakhstan's development and heritage.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-gray-900 shadow-lg rounded-lg p-6">
+                        <img src="https://i.natgeofe.com/n/65b5d84b-c44e-41d0-8ee9-5295e1e6eba5/silkroad_shutterstock_1236828025_HR.jpg?w=2880&h=1920" alt="Charyn Canyon" class="rounded-lg w-full h-48 object-cover" />
+                        <h4 class="text-xl font-medium mt-4 text-white">Charyn Canyon</h4>
+                        <p class="text-gray-300 mt-2">Charyn Canyon has been shaped over millions of years and holds historical significance as part of ancient trade routes and nomadic settlements.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-gray-900 shadow-lg rounded-lg p-6">
+                        <img src="https://eurasia.travel/wp-content/uploads/2024/10/Khan-Shatyr-Shopping-Center-1024x683.jpg" alt="Khan Shatyr" class="rounded-lg w-full h-48 object-cover" />
+                        <h4 class="text-xl font-medium mt-4 text-white">Khan Shatyr</h4>
+                        <p class="text-gray-300 mt-2">Khan Shatyr, a modern architectural marvel, symbolizes Kazakhstan's progress and innovation in the heart of its capital.</p>
+                    </div>
+                    <div></div>
+                    <!-- Card 5 -->
+                    <div class="bg-gray-900 shadow-lg rounded-lg p-6">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/42/74/42/250.jpg?w=1200&h=-1&s=1" alt="Burabay National Park" class="rounded-lg w-full h-48 object-cover" />
+                        <h4 class="text-xl font-medium mt-4 text-white">Burabay National Park</h4>
+                        <p class="text-gray-300 mt-2">Burabay National Park is steeped in legends and history, once serving as a retreat for ancient Kazakh tribes and leaders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="bg-teal-500 py-8">
+            <div class="container mx-auto text-center text-gray-900">
+                <div class="mb-4">&copy; Virtual Kazakhstan 2025</div>
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div>
+                    <a href="#" class="hover:text-white">Privacy Policy</a> |
+                    <a href="#" class="hover:text-white">Terms of Use</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
